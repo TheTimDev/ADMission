@@ -53,6 +53,7 @@ endif()
 
 # Propagate adm libs to the parent directory
 set(adm_libs ${adm_libs} PARENT_SCOPE)
+install(TARGETS ${adm_libs} DESTINATION lib)
 
 # **************************************************************************** #
 # Cleanup

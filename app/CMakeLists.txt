@@ -16,6 +16,7 @@ foreach(app_name ${_apps})
   endif()
   adm_compile_with_openmp(PRIVATE ${app_name})
   adm_link_openmp_runtime(PRIVATE ${app_name})
+  install(TARGETS ${app_name} DESTINATION bin)
 endforeach()
 
 # **************************************************************************** #
